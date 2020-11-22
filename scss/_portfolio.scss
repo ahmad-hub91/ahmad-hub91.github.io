@@ -1,0 +1,1248 @@
+@font-face {
+    src: url(../fonts/Exo-Regular.ttf);
+    font-family: 'Exo';
+}
+
+@font-face {
+    src: url(../fonts/Ubuntu-Regular.ttf);
+    font-family: 'Ubuntu';
+}
+
+.wrapper {
+    width: 100%;
+    // ############# A Propos #############
+    .propos {
+        width: 90%;
+        margin-top: 200px;
+        margin-left: 5%;
+        h2 {
+            font-family: 'Exo';
+            font-size: 35px;
+        }
+        .row {
+            margin-top: 4%;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            .blocphoto {
+                align-self: center;
+                margin-right: 3%;
+                .photo {
+                    width: 275px;
+                    height: 275px;
+                    border-radius: 50%;
+                    box-shadow: 3px 2px 93px -12px #234355;
+                    background: url(../images/persona.jpg) center 25% no-repeat;
+                    background-size: cover;
+                    // animation
+                    -webkit-transform: scale(1);
+                    transform: scale(1);
+                    -webkit-transition: .3s ease-in-out;
+                    transition: .5s ease-in-out;
+                    &:hover {
+                        -webkit-transform: scale(1.1);
+                        transform: scale(1.1);
+                    }
+                }
+            }
+            .blocinfo {
+                width: 70%;
+                margin-left: 3%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                h4 {
+                    font-family: 'Exo';
+                    font-size: 25px;
+                }
+                p {
+                    font-family: 'Ubuntu';
+                    padding-top: 5%;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    // ############# Experience Professionnelle #############
+    .experience {
+        width: 90%;
+        margin-top: 150px;
+        margin-left: 5%;
+        h2 {
+            font-family: 'Exo';
+            font-size: 35px;
+        }
+        #soustitre1 {
+            font-family: 'Ubuntu';
+            font-size: 20px;
+            color: #00A051;
+        }
+        .row {
+            margin-top: 4%;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            .caree {
+                // width: 20%;
+                align-self: center;
+                margin-right: 3%;
+                .photo {
+                    width: 125px;
+                    height: 125px;
+                    background-color: #00A051;
+                    box-shadow: 0px 0px 14px #DC3545;
+                    font-family: 'Ubuntu';
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 18px;
+                    text-align: center;
+                }
+            }
+            .info {
+                width: 70%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin-left: 3%;
+                h4 {
+                    font-family: 'Exo';
+                    font-size: 25px;
+                }
+                h5 {
+                    font-family: 'Exo';
+                    font-size: 18px;
+                }
+                p {
+                    font-family: 'Ubuntu';
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    // ############# Diplomes #############
+    .diplome {
+        width: 90%;
+        margin-top: 150px;
+        margin-left: 5%;
+        h2 {
+            font-family: 'Exo';
+            font-size: 35px;
+        }
+        #soustitre2 {
+            font-family: 'Ubuntu';
+            font-size: 20px;
+            color: #FFC107;
+        }
+        .row {
+            margin-top: 4%;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            .cercle {
+                // width: 20%;
+                align-self: center;
+                margin-right: 3%;
+                .photo {
+                    width: 125px;
+                    height: 125px;
+                    border-radius: 50%;
+                    background-color: #FFC107;
+                    box-shadow: 0px 0px 14px #DC3545;
+                    font-family: 'Ubuntu';
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 18px;
+                    text-align: center;
+                }
+            }
+            .info {
+                width: 70%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin-left: 3%;
+                h4 {
+                    font-family: 'Exo';
+                    font-size: 25px;
+                }
+                p {
+                    font-family: 'Ubuntu';
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    // ############# Compétences #############
+    .competence {
+        width: 90%;
+        margin-top: 150px;
+        margin-left: 5%;
+        h2 {
+            font-family: 'Exo';
+            font-size: 35px;
+        }
+        #soustitre3 {
+            font-family: 'Ubuntu';
+            font-size: 20px;
+            color: #008080;
+        }
+        .row {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            .bloc {
+                width: 30%;
+                height: 500px;
+                border: 0.5px solid #969696;
+                box-shadow: 0px 2px #9b58b5;
+                margin: 2% 0%;
+                img {
+                    width: 100%;
+                }
+                img:hover {
+                    box-shadow: 0px 5px 5px #008080;
+                }
+                h3 {
+                    text-align: center;
+                    font-family: 'Exo';
+                    padding: 2% 0%;
+                    font-size: 20px;
+                }
+                ul {
+                    font-family: 'Ubuntu';
+                    font-size: 17px;
+                    padding-left: 25px;
+                    li {
+                        padding: 1%;
+                    }
+                }
+            }
+        }
+        .button {
+            margin-top: 3%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            p {
+                font-family: 'Ubuntu';
+                font-size: 25px;
+                padding-bottom: 2%;
+            }
+            a {
+                border-radius: 25px;
+                text-decoration: none;
+                padding: 1%;
+                font-family: 'Ubuntu';
+                font-size: 25px;
+                background-color: black;
+                color: white;
+                &:hover {
+                    background-color: #DC3545;
+                    color: black;
+                }
+            }
+        }
+    }
+    // ############# Mes Travaux #############
+    .travaux {
+        background-color: #f5f5dc;
+        margin-top: 10%;
+        padding: 2% 0%;
+        h2 {
+            font-family: 'Exo';
+            font-size: 35px;
+            text-align: center;
+            margin-bottom: 2%;
+        }
+        .image {
+            display: flex;
+            div {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                a {
+                    width: 60%;
+                    align-items: center;
+                    padding: 1% 0%;
+                    #img {
+                        width: 100%;
+                        box-shadow: 0px 0px 15px 6px #DC3545;
+                        -webkit-filter: sepia(100%);
+                        filter: sepia(100%);
+                    }
+                    #img:hover {
+                        -webkit-filter: sepia(0);
+                        filter: sepia(0);
+                    }
+                }
+                h3 {
+                    font-family: 'Exo';
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    // ############# Graphique Design #############
+    .design {
+        width: 90%;
+        margin-top: 150px;
+        margin-left: 5%;
+        h3 {
+            font-size: 30px;
+            font-family: 'Exo';
+        }
+        #paragraph {
+            font-family: 'Ubuntu';
+            font-size: 20px;
+            padding-top: 2%;
+        }
+        .container {
+            width: 100%;
+            .images {
+                width: 800px;
+                height: 700px;
+                margin: 0em auto;
+                position: relative;
+                list-style: none;
+                div {
+                    opacity: 0;
+                    position: absolute;
+                    p {
+                        text-align: center;
+                        padding-top: 2%;
+                        font-family: 'Ubuntu';
+                        font-size: 18px;
+                    }
+                    img {
+                        width: 100%;
+                        margin-top: 100px;
+                    }
+                }
+                div:target {
+                    opacity: 1;
+                    transition: all 1s ease-in-out;
+                }
+            }
+            .menu {
+                width: 100%;
+                padding: 20px 0px;
+                .vignettes {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    .cadre {
+                        width: 20%;
+                        padding: 10px;
+                        img {
+                            width: 100%;
+                            opacity: 0.7;
+                            &:hover {
+                                opacity: 1;
+                                transform: scale(1.1);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // ############# Developpement #############
+    .dev {
+        width: 90%;
+        margin-top: 150px;
+        margin-bottom: 5%;
+        margin-left: 5%;
+        h3 {
+            font-size: 30px;
+            font-family: 'Exo';
+        }
+        #paragraph {
+            font-family: 'Ubuntu';
+            font-size: 20px;
+            padding: 2% 0%;
+        }
+        .bob {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            .vignettes {
+                width: 20%;
+                .cadre {
+                    padding: 5px;
+                    img {
+                        width: 100%;
+                        opacity: 0.7;
+                        &:hover {
+                            opacity: 1;
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+            }
+            .images {
+                width: 70%;
+                height: 600px;
+                margin: 0em auto;
+                position: relative;
+                list-style: none;
+                div {
+                    opacity: 0;
+                    position: absolute;
+                    p {
+                        text-align: center;
+                        padding-top: 2%;
+                        font-family: 'Ubuntu';
+                        font-size: 18px;
+                    }
+                    img {
+                        width: 100%;
+                        margin-top: 100px;
+                    }
+                }
+                div:target {
+                    opacity: 1;
+                    transition: all 1s ease-in-out;
+                }
+            }
+        }
+    }
+}
+
+// ################################################################
+// Responsive Tablette
+// ################################################################
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .wrapper {
+        width: 100%;
+        // ############# A Propos #############
+        .propos {
+            width: 90%;
+            margin-top: 150px;
+            margin-left: 5%;
+            h2 {
+                font-family: 'Exo';
+                font-size: 25px;
+            }
+            .row {
+                margin-top: 4%;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                .blocphoto {
+                    align-self: center;
+                    margin-right: 3%;
+                    .photo {
+                        width: 175px;
+                        height: 175px;
+                        border-radius: 50%;
+                        box-shadow: 3px 2px 93px -12px #234355;
+                        background: url(../images/persona.jpg) center 25% no-repeat;
+                        background-size: cover;
+                        // animation
+                        -webkit-transform: scale(1);
+                        transform: scale(1);
+                        -webkit-transition: .3s ease-in-out;
+                        transition: .5s ease-in-out;
+                        &:hover {
+                            -webkit-transform: scale(1.1);
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+                .blocinfo {
+                    width: 70%;
+                    margin-left: 3%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    h4 {
+                        font-family: 'Exo';
+                        font-size: 20px;
+                    }
+                    p {
+                        font-family: 'Ubuntu';
+                        padding-top: 5%;
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+        // ############# Experience Professionnelle #############
+        .experience {
+            width: 90%;
+            margin-top: 150px;
+            margin-left: 5%;
+            h2 {
+                font-family: 'Exo';
+                font-size: 25px;
+            }
+            #soustitre1 {
+                font-family: 'Ubuntu';
+                font-size: 17px;
+                color: #00A051;
+            }
+            .row {
+                margin-top: 4%;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                .caree {
+                    // width: 20%;
+                    align-self: center;
+                    margin-right: 3%;
+                    .photo {
+                        width: 100px;
+                        height: 100px;
+                        background-color: #00A051;
+                        box-shadow: 0px 0px 14px #DC3545;
+                        font-family: 'Ubuntu';
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 16px;
+                        text-align: center;
+                    }
+                }
+                .info {
+                    width: 70%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    margin-left: 3%;
+                    h4 {
+                        font-family: 'Exo';
+                        font-size: 20px;
+                    }
+                    h5 {
+                        font-family: 'Exo';
+                        font-size: 15px;
+                    }
+                    p {
+                        font-family: 'Ubuntu';
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+        // ############# Diplomes #############
+        .diplome {
+            width: 90%;
+            margin-top: 150px;
+            margin-left: 5%;
+            h2 {
+                font-family: 'Exo';
+                font-size: 25px;
+            }
+            #soustitre2 {
+                font-family: 'Ubuntu';
+                font-size: 17px;
+                color: #FFC107;
+            }
+            .row {
+                margin-top: 4%;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                .cercle {
+                    // width: 20%;
+                    align-self: center;
+                    margin-right: 3%;
+                    .photo {
+                        width: 100px;
+                        height: 100px;
+                        border-radius: 50%;
+                        background-color: #FFC107;
+                        box-shadow: 0px 0px 14px #DC3545;
+                        font-family: 'Ubuntu';
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 16px;
+                        text-align: center;
+                    }
+                }
+                .info {
+                    width: 70%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    margin-left: 3%;
+                    h4 {
+                        font-family: 'Exo';
+                        font-size: 20px;
+                    }
+                    p {
+                        font-family: 'Ubuntu';
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+        // ############# Compétences #############
+        .competence {
+            width: 90%;
+            margin-top: 150px;
+            margin-left: 5%;
+            h2 {
+                font-family: 'Exo';
+                font-size: 25px;
+            }
+            #soustitre3 {
+                font-family: 'Ubuntu';
+                font-size: 17px;
+                color: #008080;
+            }
+            .row {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+                .bloc {
+                    width: 49%;
+                    height: 500px;
+                    border: 0.5px solid #969696;
+                    box-shadow: 0px 2px #9b58b5;
+                    margin: 2% 0%;
+                    img {
+                        width: 100%;
+                    }
+                    img:hover {
+                        box-shadow: 0px 5px 5px #008080;
+                    }
+                    h3 {
+                        text-align: center;
+                        font-family: 'Exo';
+                        padding: 2% 0%;
+                        font-size: 18px;
+                    }
+                    ul {
+                        font-family: 'Ubuntu';
+                        font-size: 15px;
+                        padding-left: 25px;
+                        li {
+                            padding: 1%;
+                        }
+                    }
+                }
+            }
+            .button {
+                margin-top: 3%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                p {
+                    font-family: 'Ubuntu';
+                    font-size: 20px;
+                    padding-bottom: 2%;
+                }
+                a {
+                    border-radius: 20px;
+                    text-decoration: none;
+                    padding: 1%;
+                    font-family: 'Ubuntu';
+                    font-size: 20px;
+                    background-color: black;
+                    color: white;
+                    &:hover {
+                        background-color: #DC3545;
+                        color: black;
+                    }
+                }
+            }
+        }
+        // ############# Mes Travaux #############
+        .travaux {
+            background-color: #f5f5dc;
+            margin-top: 10%;
+            padding: 2% 0%;
+            h2 {
+                font-family: 'Exo';
+                font-size: 25px;
+                text-align: center;
+                margin-bottom: 2%;
+            }
+            .image {
+                display: flex;
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    a {
+                        width: 60%;
+                        align-items: center;
+                        padding: 1% 0%;
+                        #img {
+                            width: 100%;
+                            box-shadow: 0px 0px 15px 6px #DC3545;
+                            -webkit-filter: sepia(100%);
+                            filter: sepia(100%);
+                        }
+                        #img:hover {
+                            -webkit-filter: sepia(0);
+                            filter: sepia(0);
+                        }
+                    }
+                    h3 {
+                        font-family: 'Exo';
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+        // ############# Graphique Design #############
+        .design {
+            width: 90%;
+            margin-top: 100px;
+            margin-left: 5%;
+            h3 {
+                font-size: 20px;
+                font-family: 'Exo';
+            }
+            #paragraph {
+                font-family: 'Ubuntu';
+                font-size: 17px;
+                padding-top: 2%;
+            }
+            .container {
+                width: 90%;
+                margin-left: 5%;
+                .images {
+                    width: 500px;
+                    height: 500px;
+                    margin-top: 150px;
+                    margin: 0em auto;
+                    position: relative;
+                    list-style: none;
+                    div {
+                        opacity: 0;
+                        position: absolute;
+                        p {
+                            text-align: center;
+                            padding-top: 2%;
+                            font-family: 'Ubuntu';
+                            font-size: 15px;
+                        }
+                        img {
+                            width: 100%;
+                            margin-top: 70px;
+                        }
+                    }
+                    div:target {
+                        opacity: 1;
+                        transition: all 1s ease-in-out;
+                    }
+                }
+                .menu {
+                    width: 100%;
+                    padding: 20px 0px;
+                    .vignettes {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        .cadre {
+                            width: 20%;
+                            padding: 10px;
+                            img {
+                                width: 100%;
+                                opacity: 0.7;
+                                &:hover {
+                                    opacity: 1;
+                                    transform: scale(1.1);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        // ############# Developpement #############
+        .dev {
+            width: 90%;
+            margin-top: 100px;
+            margin-bottom: 5%;
+            margin-left: 5%;
+            h3 {
+                font-size: 20px;
+                font-family: 'Exo';
+            }
+            #paragraph {
+                font-family: 'Ubuntu';
+                font-size: 17px;
+                padding: 2% 0%;
+            }
+            .bob {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                .vignettes {
+                    width: 20%;
+                    .cadre {
+                        padding: 5px;
+                        img {
+                            width: 100%;
+                            opacity: 0.7;
+                            &:hover {
+                                opacity: 1;
+                                transform: scale(1.1);
+                            }
+                        }
+                    }
+                }
+                .images {
+                    width: 70%;
+                    height: 500px;
+                    margin: 0em auto;
+                    position: relative;
+                    list-style: none;
+                    div {
+                        opacity: 0;
+                        position: absolute;
+                        p {
+                            text-align: center;
+                            padding-top: 2%;
+                            font-family: 'Ubuntu';
+                            font-size: 15px;
+                        }
+                        img {
+                            width: 100%;
+                            margin-top: 70px;
+                        }
+                    }
+                    div:target {
+                        opacity: 1;
+                        transition: all 1s ease-in-out;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// ################################################################
+// Responsive Smartphone
+// ################################################################
+@media all and (min-width:375px) and (max-width: 767px) {
+    .wrapper {
+        width: 100%;
+        // ############# A Propos #############
+        .propos {
+            width: 90%;
+            margin-top: 100px;
+            margin-left: 5%;
+            h2 {
+                font-family: 'Exo';
+                font-size: 15px;
+            }
+            .row {
+                margin-top: 5%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                .blocphoto {
+                    align-self: center;
+                    margin-right: 0%;
+                    .photo {
+                        width: 125px;
+                        height: 125px;
+                        border-radius: 50%;
+                        box-shadow: 3px 2px 93px -12px #234355;
+                        background: url(../images/persona.jpg) center 25% no-repeat;
+                        background-size: cover;
+                        // animation
+                        -webkit-transform: scale(1);
+                        transform: scale(1);
+                        -webkit-transition: .3s ease-in-out;
+                        transition: .5s ease-in-out;
+                        &:hover {
+                            -webkit-transform: scale(1.1);
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+                .blocinfo {
+                    align-self: center;
+                    margin-left: 0%;
+                    width: 90%;
+                    h4 {
+                        font-family: 'Exo';
+                        font-size: 13px;
+                        text-align: center;
+                        padding-top: 2%;
+                    }
+                    p {
+                        font-family: 'Ubuntu';
+                        padding-top: 2%;
+                        font-size: 12px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        // ############# Experience Professionnelle #############
+        .experience {
+            width: 90%;
+            margin-top: 75px;
+            margin-left: 5%;
+            h2 {
+                font-family: 'Exo';
+                font-size: 15px;
+            }
+            #soustitre1 {
+                font-family: 'Ubuntu';
+                font-size: 13px;
+                color: #00A051;
+            }
+            .row {
+                margin-top: 5%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                .caree {
+                    // width: 20%;
+                    margin-right: 0%;
+                    .photo {
+                        width: 175px;
+                        height: 30px;
+                        background-color: #00A051;
+                        box-shadow: 0px 0px 14px #DC3545;
+                        font-family: 'Ubuntu';
+                        font-size: 14px;
+                        text-align: center;
+                    }
+                }
+                .info {
+                    width: 90%;
+                    margin-left: 0%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    h4 {
+                        padding-top: 2%;
+                        font-family: 'Exo';
+                        font-size: 13px;
+                        text-align: center;
+                    }
+                    h5 {
+                        font-family: 'Exo';
+                        font-size: 12px;
+                        text-align: center;
+                    }
+                    p {
+                        font-family: 'Ubuntu';
+                        font-size: 12px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        // ############# Diplomes #############
+        .diplome {
+            width: 90%;
+            margin-top: 100px;
+            margin-left: 5%;
+            h2 {
+                font-family: 'Exo';
+                font-size: 15px;
+            }
+            #soustitre2 {
+                font-family: 'Ubuntu';
+                font-size: 13px;
+                color: #FFC107;
+            }
+            .row {
+                margin-top: 5%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                .cercle {
+                    align-self: center;
+                    margin-right: 0%;
+                    .photo {
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 50%;
+                        background-color: #FFC107;
+                        box-shadow: 0px 0px 14px #DC3545;
+                        font-family: 'Ubuntu';
+                        font-size: 14px;
+                        text-align: center;
+                    }
+                }
+                .info {
+                    width: 90%;
+                    margin-left: 0%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    h4 {
+                        font-family: 'Exo';
+                        font-size: 13px;
+                    }
+                    p {
+                        font-family: 'Ubuntu';
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+        // ############# Compétences #############
+        .competence {
+            width: 90%;
+            margin-top: 100px;
+            margin-left: 5%;
+            h2 {
+                font-family: 'Exo';
+                font-size: 15px;
+            }
+            #soustitre3 {
+                font-family: 'Ubuntu';
+                font-size: 13px;
+                color: #008080;
+            }
+            .row {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                .bloc {
+                    width: 350px;
+                    height: 400px;
+                    align-self: center;
+                    border: 0.5px solid #969696;
+                    box-shadow: 0px 2px #9b58b5;
+                    margin: 2% 0%;
+                    img {
+                        width: 100%;
+                    }
+                    img:hover {
+                        box-shadow: 0px 5px 5px #008080;
+                    }
+                    h3 {
+                        text-align: center;
+                        font-family: 'Exo';
+                        padding: 2% 0%;
+                        font-size: 16px;
+                    }
+                    ul {
+                        font-family: 'Ubuntu';
+                        font-size: 13px;
+                        padding-left: 20px;
+                        li {
+                            padding: 1%;
+                        }
+                    }
+                }
+            }
+            .button {
+                margin-top: 3%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                p {
+                    font-family: 'Ubuntu';
+                    font-size: 15px;
+                    padding-bottom: 2%;
+                    text-align: center;
+                }
+                a {
+                    font-size: 15px;
+                    border-radius: 20px;
+                    text-decoration: none;
+                    padding: 1%;
+                    font-family: 'Ubuntu';
+                    background-color: black;
+                    color: white;
+                    &:hover {
+                        background-color: #DC3545;
+                        color: black;
+                    }
+                }
+            }
+        }
+        // ############# Mes Travaux #############
+        .travaux {
+            background-color: #f5f5dc;
+            margin-top: 10%;
+            padding: 2% 0%;
+            h2 {
+                font-family: 'Exo';
+                font-size: 15px;
+                text-align: center;
+                margin-bottom: 2%;
+            }
+            .image {
+                display: flex;
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    a {
+                        width: 60%;
+                        align-items: center;
+                        padding: 1% 0%;
+                        #img {
+                            width: 100%;
+                            box-shadow: 0px 0px 15px 6px #DC3545;
+                            -webkit-filter: sepia(100%);
+                            filter: sepia(100%);
+                        }
+                        #img:hover {
+                            -webkit-filter: sepia(0);
+                            filter: sepia(0);
+                        }
+                    }
+                    h3 {
+                        font-family: 'Exo';
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+        // ############# Graphique Design #############
+        .design {
+            width: 90%;
+            margin-top: 75px;
+            margin-left: 5%;
+            h3 {
+                font-size: 15px;
+                font-family: 'Exo';
+            }
+            #paragraph {
+                font-family: 'Ubuntu';
+                font-size: 13px;
+                padding-top: 2%;
+            }
+            .container {
+                width: 90%;
+                margin-left: 5%;
+                .images {
+                    width: 300px;
+                    height: 350px;
+                    margin: 0em auto;
+                    position: relative;
+                    list-style: none;
+                    div {
+                        opacity: 0;
+                        position: absolute;
+                        p {
+                            text-align: center;
+                            padding-top: 2%;
+                            font-family: 'Ubuntu';
+                            font-size: 12px;
+                        }
+                        img {
+                            width: 100%;
+                            margin-top: 40px;
+                        }
+                    }
+                    div:target {
+                        opacity: 1;
+                        transition: all 1s ease-in-out;
+                    }
+                }
+                .menu {
+                    width: 100%;
+                    padding: 20px 0px;
+                    .vignettes {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        .cadre {
+                            width: 20%;
+                            padding: 10px;
+                            img {
+                                width: 100%;
+                                opacity: 0.7;
+                                &:hover {
+                                    opacity: 1;
+                                    transform: scale(1.1);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        // ############# Developpement #############
+        .dev {
+            width: 90%;
+            margin-top: 75px;
+            margin-bottom: 5%;
+            margin-left: 5%;
+            h3 {
+                font-size: 15px;
+                font-family: 'Exo';
+            }
+            #paragraph {
+                font-family: 'Ubuntu';
+                font-size: 13px;
+                padding: 2% 0%;
+            }
+            .bob {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                .vignettes {
+                    width: 20%;
+                    .cadre {
+                        padding: 5px;
+                        img {
+                            width: 100%;
+                            opacity: 0.7;
+                            &:hover {
+                                opacity: 1;
+                                transform: scale(1.1);
+                            }
+                        }
+                    }
+                }
+                .images {
+                    width: 70%;
+                    height: 350px;
+                    margin: 0em auto;
+                    position: relative;
+                    list-style: none;
+                    div {
+                        opacity: 0;
+                        position: absolute;
+                        p {
+                            text-align: center;
+                            padding-top: 2%;
+                            font-family: 'Ubuntu';
+                            font-size: 12px;
+                        }
+                        img {
+                            width: 100%;
+                            margin-top: 30px;
+                        }
+                    }
+                    div:target {
+                        opacity: 1;
+                        transition: all 1s ease-in-out;
+                    }
+                }
+            }
+        }
+    }
+}

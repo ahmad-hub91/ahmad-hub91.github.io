@@ -1,0 +1,14 @@
+@import "navbar";
+@import "header";
+@import "footer";
+@import "services";
+@import "contact";
+@import "portfolio";
+@import "liensutiles";
+@import "mentions";
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* j'inclus mes bordures dans la width totale de mes éléments */
+}

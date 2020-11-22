@@ -1,0 +1,196 @@
+@font-face {
+    src: url(../fonts/Exo-Regular.ttf);
+    font-family: 'Exo';
+}
+
+@font-face {
+    src: url(../fonts/Ubuntu-Regular.ttf);
+    font-family: 'Ubuntu';
+}
+
+.wrapper .service {
+    width: 80%;
+    margin-left: 10%;
+    .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 5%;
+        h2 {
+            text-align: center;
+            font-family: 'Exo';
+            font-size: 40px;
+            padding-top: 5%;
+        }
+        #soustitre {
+            font-family: 'Ubuntu';
+            font-size: 20px;
+            padding-bottom: 5%;
+        }
+        .row {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            .bloc {
+                width: 30%;
+                height: 500px;
+                border: 0.5px solid #969696;
+                box-shadow: 0px 2px #9b58b5;
+                margin: 2% 0%;
+                img {
+                    width: 100%;
+                }
+                img:hover {
+                    box-shadow: 0px 5px 5px #008080;
+                }
+                h3 {
+                    text-align: center;
+                    font-family: 'Exo';
+                    padding: 2% 0%;
+                    font-size: 20px;
+                }
+                p {
+                    text-align: center;
+                    font-family: 'Ubuntu';
+                    font-size: 18px;
+                    padding: 0% 2%;
+                }
+            }
+        }
+    }
+}
+
+// ################################################################
+// Responsive Tablette
+// ################################################################
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .wrapper .service {
+        width: 80%;
+        margin-left: 10%;
+        .container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 5%;
+            h2 {
+                text-align: center;
+                font-family: 'Exo';
+                font-size: 30px;
+                padding-top: 5%;
+            }
+            #soustitre {
+                font-family: 'Ubuntu';
+                font-size: 17px;
+                padding-bottom: 5%;
+                text-align: center;
+            }
+            .row {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+                .bloc {
+                    width: 300px;
+                    height: 425px;
+                    border: 0.5px solid #969696;
+                    box-shadow: 0px 2px #9b58b5;
+                    margin: 2% 0%;
+                    img {
+                        width: 100%;
+                    }
+                    img:hover {
+                        box-shadow: 0px 5px 5px #008080;
+                    }
+                    h3 {
+                        text-align: center;
+                        font-family: 'Exo';
+                        padding: 2% 0%;
+                        font-size: 18px;
+                    }
+                    p {
+                        text-align: center;
+                        font-family: 'Ubuntu';
+                        font-size: 15px;
+                        padding: 0% 2%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// ################################################################
+// Responsive Smartphone
+// ################################################################
+@media all and (max-width: 767px) {
+    .wrapper .service {
+        width: 80%;
+        margin-left: 10%;
+        .container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 5%;
+            h2 {
+                text-align: center;
+                font-family: 'Exo';
+                font-size: 20px;
+                padding-top: 5%;
+            }
+            #soustitre {
+                font-family: 'Ubuntu';
+                font-size: 15px;
+                padding-bottom: 5%;
+                text-align: center;
+            }
+            .row {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                .bloc {
+                    width: 350px;
+                    height: 400px;
+                    align-self: center;
+                    border: 0.5px solid #969696;
+                    box-shadow: 0px 2px #9b58b5;
+                    margin: 2% 0%;
+                    .image {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        img {
+                            width: 100%;
+                        }
+                    }
+                    img:hover {
+                        box-shadow: 0px 5px 5px #008080;
+                    }
+                    h3 {
+                        text-align: center;
+                        font-family: 'Exo';
+                        padding: 2% 0%;
+                        font-size: 16px;
+                    }
+                    p {
+                        text-align: center;
+                        font-family: 'Ubuntu';
+                        font-size: 13px;
+                        padding: 0% 2%;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,65 @@
+@font-face {
+    src: url(../fonts/Ubuntu-Regular.ttf);
+    font-family: 'Ubuntu';
+}
+
+footer {
+    padding: 10px 0vw 10px 0vw;
+    background-color: #234355;
+    font-family: 'Ubuntu';
+    color: white;
+    bottom: 0;
+    text-align: center;
+    span {
+        color: #DC3545;
+    }
+    a {
+        text-decoration: none;
+        color: white;
+    }
+    p {
+        color: #FFC107;
+    }
+}
+
+// ################################################################
+// Responsive Tablette
+// ################################################################
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    footer {
+        padding: 8px 0vw 8px 0vw;
+        background-color: #234355;
+        font-family: 'Ubuntu';
+        color: white;
+        bottom: 0;
+        text-align: center;
+        font-size: 13px;
+        span {
+            color: #DC3545;
+        }
+        p {
+            color: #FFC107;
+        }
+    }
+}
+
+// ################################################################
+// Responsive Smartphone
+// ################################################################
+@media all and (max-width: 767px) {
+    footer {
+        padding: 5px 0vw 5px 0vw;
+        background-color: #234355;
+        font-family: 'Ubuntu';
+        color: white;
+        bottom: 0;
+        text-align: center;
+        font-size: 10px;
+        span {
+            color: #DC3545;
+        }
+        p {
+            color: #FFC107;
+        }
+    }
+}

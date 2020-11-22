@@ -1,0 +1,147 @@
+@font-face {
+    src: url(../fonts/Philosopher-Bold.ttf);
+    font-family: 'Philosopher-Bold';
+}
+
+@font-face {
+    src: url(../fonts/BetaSansNorm.ttf);
+    font-family: 'BetaSansNorm';
+}
+
+.wrapper .header {
+    width: 100%;
+    height: 800px;
+    #videobg {
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+    }
+    .texte {
+        padding: 20% 5% 0% 5%;
+        h1 {
+            width: 100%;
+            font-size: 50px;
+            color: #cdff00;
+            font-family: 'Philosopher-Bold';
+            background-color: #002a688f;
+            padding: 1%;
+            text-align: center;
+            animation: anim 3s;
+        }
+        h2 {
+            width: 100%;
+            font-size: 40px;
+            font-family: 'BetaSansNorm';
+            color: white;
+            background-color: #002a688f;
+            padding: 1%;
+            text-align: center;
+            animation: anim 3s;
+        }
+    }
+}
+
+@keyframes anim {
+    0% {
+        font-size: 0px;
+        width: 0%;
+    }
+    100% {
+        font-size: 40px;
+        width: 100%;
+    }
+}
+
+// ################################################################
+// Responsive Tablette
+// ################################################################
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .wrapper .header {
+        width: 100%;
+        height: 600px;
+        #videobg {
+            position: absolute;
+            z-index: -1;
+            width: 100%;
+        }
+        .texte {
+            color: white;
+            padding: 20% 5% 0% 5%;
+            h1 {
+                width: 100%;
+                font-size: 35px;
+                color: #cdff00;
+                font-family: 'Philosopher-Bold';
+                background-color: #002a688f;
+                padding: 1%;
+                text-align: center;
+                animation: animo 3s;
+            }
+            h2 {
+                width: 100%;
+                font-size: 25px;
+                font-family: 'BetaSansNorm';
+                background-color: #002a688f;
+                padding: 1%;
+                text-align: center;
+                animation: animo 3s;
+            }
+        }
+    }
+    @keyframes animo {
+        0% {
+            font-size: 0px;
+            width: 0%;
+        }
+        100% {
+            width: 100%;
+        }
+    }
+}
+
+// ################################################################
+// Responsive Smartphone
+// ################################################################
+@media all and (max-width: 767px) {
+    .wrapper .header {
+        width: 100%;
+        height: 300px;
+        #videobg {
+            position: absolute;
+            z-index: -1;
+            width: 100%;
+        }
+        .texte {
+            color: white;
+            padding: 20% 5% 0% 5%;
+            h1 {
+                width: 100%;
+                font-size: 20px;
+                color: #cdff00;
+                font-family: 'Philosopher-Bold';
+                background-color: #002a688f;
+                padding: 1%;
+                text-align: center;
+                animation: animo 3s;
+            }
+            h2 {
+                width: 100%;
+                font-size: 15px;
+                font-family: 'BetaSansNorm';
+                background-color: #002a688f;
+                padding: 1%;
+                text-align: center;
+                animation: animo 3s;
+            }
+        }
+    }
+    @keyframes animo {
+        0% {
+            font-size: 0px;
+            width: 0%;
+        }
+        100% {
+            width: 100%;
+        }
+    }
+}

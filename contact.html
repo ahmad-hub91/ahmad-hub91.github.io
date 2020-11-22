@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taha - Contact</title>
+    <!-- Style de site -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Icon de site -->
+    <link rel="shortcut icon" href="images/contact_icon.png">
+</head>
+
+<body>
+    <main class="wrapper">
+        <!--################ Navigation ################-->
+        <nav class="nav">
+            <a href="index.html" id="logo"><img src="images/logoblanche3.png" alt=""></a>
+            <ul class="menu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="liensutiles.html">Liens Utiles</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!--################ Contact ################-->
+        <section class="contact">
+            <h2>CONTACT</h2>
+            <div class="row">
+                <div class="bloc">
+                    <img src="images/inboxjaune.png" alt="">
+                    <p><a href="mailto:a.taha91@hotmail.com">a.taha91@hotmail.com</a></p>
+                </div>
+                <div class="bloc">
+                    <img src="images/mapjaune.png" alt="">
+                    <p>88 rue Lucien Andrieux<br>38100 Grenoble</p>
+                </div>
+                <div class="bloc">
+                    <img src="images/calljaune.png" alt="">
+                    <p>07 67 68 25 54</p>
+                </div>
+            </div>
+
+            <p id="p">Vous pouvez aussi me contacter en remplissant ce formulaire ci-dessous</p>
+
+            <!-- Contact Form -->
+            <div class="div">
+                <form action="messages.php" method="POST" class="forme">
+                    <input type="text" id="prenom" name="prenom" required="required" placeholder="Votre Prénom">
+
+                    <input type="text" id="nom" name="nom" required="required" placeholder="Votre Nom">
+
+                    <input type="text" id="sujet" name="sujet" required="required" placeholder="Votre Sujet">
+
+                    <input type="email" id="email" name="email" required="required" placeholder="Votre adresse mail">
+
+                    <textarea id="message" name="message" required="required" placeholder="Ecrivez votre message .."></textarea>
+
+                    <input class="btn btn-style1" type="submit" value="Envoyer">
+
+                </form>
+            </div>
+            <!-- end of contact form -->
+
+            <div class="reseauxsociale">
+                <h3>À suivre sur :</h3>
+                <div>
+                    <a href="https://www.facebook.com" target="_blank"><img src="images/facebook.png" alt=""></a>
+                    <a href="https://www.instagram.com" target="_blank"><img src="images/instagram.png" alt=""></a>
+                    <a href="https://www.linkedin.com/in/ahmad-taha91/" target="_blank"><img src="images/linkedin.png" alt=""></a>
+                </div>
+            </div>
+        </section>
+
+        <!--################ Footer ################-->
+        <footer>Tous Droits Réservés 2020 Pour<span>&nbsp; Ahmad TAHA &copy; <a href="mentions.html">| Mentions Légales</a></span>
+            <br>
+            <!-- Afficher la date et l'heure en temps réel -->
+            <p id="affiche_date"></p>
+        </footer>
+    </main>
+
+    <!-- Liéer le script de fichier javascript -->
+    <script src="main.js"></script>
+</body>
+
+</html>

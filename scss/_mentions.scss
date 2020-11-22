@@ -1,0 +1,94 @@
+@font-face {
+    src: url(../fonts/Exo-Regular.ttf);
+    font-family: 'Exo';
+}
+
+@font-face {
+    src: url(../fonts/Ubuntu-Regular.ttf);
+    font-family: 'Ubuntu';
+}
+
+.wrapper .mentions {
+    width: 90%;
+    margin-top: 200px;
+    margin-bottom: 100px;
+    margin-left: 5%;
+    h2 {
+        font-family: 'Exo';
+        font-size: 35px;
+    }
+    #soustitre {
+        font-family: 'Ubuntu';
+        font-size: 18px;
+    }
+    h3 {
+        font-family: 'Exo';
+        padding: 2% 0% 1% 0%;
+        font-size: 20px;
+    }
+    .bloc {
+        font-family: 'Ubuntu';
+        font-size: 18px;
+        padding: 0% 2%;
+    }
+}
+
+// ################################################################
+// Responsive Tablette
+// ################################################################
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .wrapper .mentions {
+        width: 90%;
+        margin-top: 150px;
+        margin-bottom: 75px;
+        margin-left: 5%;
+        h2 {
+            font-family: 'Exo';
+            font-size: 25px;
+        }
+        #soustitre {
+            font-family: 'Ubuntu';
+            font-size: 15px;
+        }
+        h3 {
+            font-family: 'Exo';
+            padding: 2% 0% 1% 0%;
+            font-size: 18px;
+        }
+        .bloc {
+            font-family: 'Ubuntu';
+            font-size: 15px;
+            padding: 0% 2%;
+        }
+    }
+}
+
+// ################################################################
+// Responsive Smartphone
+// ################################################################
+@media all and (max-width: 767px) {
+    .wrapper .mentions {
+        width: 90%;
+        margin-top: 100px;
+        margin-bottom: 50px;
+        margin-left: 5%;
+        h2 {
+            font-family: 'Exo';
+            font-size: 18px;
+        }
+        #soustitre {
+            font-family: 'Ubuntu';
+            font-size: 12px;
+        }
+        h3 {
+            font-family: 'Exo';
+            padding: 2% 0% 1% 0%;
+            font-size: 14px;
+        }
+        .bloc {
+            font-family: 'Ubuntu';
+            font-size: 12px;
+            padding: 0% 2%;
+        }
+    }
+}
